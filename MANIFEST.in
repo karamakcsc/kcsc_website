@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include kcsc_website *.css
+recursive-include kcsc_website *.csv
+recursive-include kcsc_website *.html
+recursive-include kcsc_website *.ico
+recursive-include kcsc_website *.js
+recursive-include kcsc_website *.json
+recursive-include kcsc_website *.md
+recursive-include kcsc_website *.png
+recursive-include kcsc_website *.py
+recursive-include kcsc_website *.svg
+recursive-include kcsc_website *.txt
+recursive-exclude kcsc_website *.pyc
