@@ -185,3 +185,14 @@ app_license = "MIT"
 # auth_hooks = [
 #	"kcsc_website.auth.validate"
 # ]
+
+fixtures = [
+    {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+                  "Customer-publish"
+
+                  ]
+        ]
+    ]}
+]
