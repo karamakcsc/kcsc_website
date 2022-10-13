@@ -515,7 +515,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f3f9fd;
+  background: #ffffff;
   padding: 10px 0;
   text-align: center;
 }
@@ -526,13 +526,13 @@ section {
   justify-content: center;
 }
 
-.clients img {
+/* .clients img {
   width: 50%;
   filter: grayscale(100);
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
-}
+} */
 
 .clients img:hover {
   filter: none;
@@ -1627,4 +1627,14 @@ section {
 
 #footer .footer-links a:hover {
   color: #3498db;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }

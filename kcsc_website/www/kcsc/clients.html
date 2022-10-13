@@ -1,0 +1,116 @@
+{% extends 'templates/kcsc_base.html' %}
+{% block title %}Clients-{% endblock %}
+
+{% block content %}
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    
+    <!-- <section id="about" class="about">
+      <div class="container">
+
+        <!-- <div class="section-title" data-aos="fade-up">
+          <h2>Background</h2>
+          <!-- <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+        </div> -->
+    <section class="inner-page">
+      <div class="container">
+        <!-- <p>
+          <b>Karama Computer Services Co.( KCSC)</b> has been established in 1991 in Jordan to be a member of the KCSC group of companies that have been functioning in Kuwait, Saudi Arabia, and other Arab countries since 1977.
+        </p>
+        <p>
+          <b>KCSC</b>is well experienced to offer the total consultancy approach for turnkey solutions. This approach will cover; the application software, the consultancy, the training, and all other services required providing a total comprehensive solution, which handles all the needs of the customer in all required application areas.
+        </p> -->
+      </div>
+    </section>
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients clients">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Clients</h2>
+          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
+        </div>
+
+        <div class="row">
+          {% for customer in customer %}
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{{customer.image}}" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="{{customer.image}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a href="{{customer.image}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="/assets/kcsc_website/kcsc/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a href="/assets/kcsc_website/kcsc/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="/assets/kcsc_website/kcsc/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a href="/assets/kcsc_website/kcsc/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+          {% endfor %}
+
+          <!-- <div class="col-lg-2 col-md-4 col-6">
+            <img src="/assets/kcsc_website/kcsc/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="/assets/kcsc_website/kcsc/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="/assets/kcsc_website/kcsc/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="/assets/kcsc_website/kcsc/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="/assets/kcsc_website/kcsc/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+  {% endblock %}
