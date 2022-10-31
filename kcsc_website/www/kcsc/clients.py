@@ -2,7 +2,7 @@ import frappe
 
 def get_context(context):
 	#Banners Loop
-	customer = frappe.db.sql(""" SELECT name, customer_name, image
+	customer = frappe.db.sql(""" SELECT name, customer_name, image, website
 						   FROM `tabCustomer` WHERE publish = 1 ORDER BY creation DESC;""", as_dict=True)
 	context.customer = customer
 
